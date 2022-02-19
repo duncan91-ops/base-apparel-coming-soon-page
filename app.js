@@ -7,6 +7,7 @@ form.addEventListener("submit", (e) => {
   const email = form.elements.email.value;
   if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
     form.elements.email.value = "";
+    window.alert("Success! We will notify you when the store is ready");
   } else {
     input.classList.add("error");
     submitButton.disabled = true;
